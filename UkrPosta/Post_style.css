@@ -281,12 +281,18 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     color: #0E2F4B;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
+    transition: 1s;
+}
+.export_code_block button:hover{
+    background: #faa906;
+    transition: 2s;
 }
 
 /*Фінансові послуги*/
@@ -437,7 +443,7 @@ h2{
 }
 .main_news{
     width: 83.5vw;
-    height: 55vh;
+    height: 53vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -519,6 +525,17 @@ h2{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+    #more{
+        height: 2vh;
+        padding-right: 3vw;
+        display: flex;
+        justify-content: flex-end;
+        color:#0E2F4B;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 24px;;
+    }
 /*Для юридичних осіб*/
 
 .entity{
