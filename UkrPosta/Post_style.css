@@ -35,17 +35,17 @@ h2{
         height: 7vh;
         margin: 0;
         padding-left: 10vw;
-
         background: #FFF;
 
         display: flex;
         justify-content: flex-start;
 
         color: #99A2AA;
+        text-align: center;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 60px;
+        font-weight: 700;
+        line-height: 20px;
 
     }
 
@@ -57,6 +57,12 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 1s;
+    }
+    .navigation a:hover{
+        color: #232526;
+        border-bottom: 1px solid #232526;
+        transition: 2s;
     }
 
 /*    Tab_panel */
@@ -152,7 +158,17 @@ h2{
 
     text-decoration: none;
     color: #99A2AA;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 20px; /* 125% */
+
+    transition: 1s;
+}
+.links a:hover{
+    color: #34373a;
+    transition: 2s;
+
 }
 
 .links a > svg {
@@ -185,7 +201,7 @@ h2{
     font-family: 'Open Sans', sans-serif;
     width: 85%;
 }
-
+/*Wrap Box*/
 .wrap_box {
     display: flex;
     flex-direction: column;
@@ -193,16 +209,28 @@ h2{
     padding-bottom: 4vh;
 }
 
-.service_box {
+.wrap_box a{
+    padding-left: 2vw;
     width: 25.5vw;
     height: 17.5vh;
     font-size: 1.5rem;
     font-weight: 700;
-}
+    text-decoration: none;
+    color: #0E2F4B;
+    transition: 1.5s;
+    border-radius: 10px;
+    }
+    .wrap_box a:hover{
+        color: white;
+        background-color: rgba(4, 44, 75, 0.75);
+        transition: 2.5s;
+    }
 
-.service_box p {
-    width: 60%;
-    margin-bottom: 0;
+    .wrap_box a p:nth-child(2){
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
 }
 
 .service_box #p {
@@ -378,6 +406,7 @@ h2{
     height: 8.2vh;
     border-radius: 10px;
     background: #FDC13D;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
@@ -533,11 +562,86 @@ h2{
     width: 100vw;
     height: 50vh;
     background: #FEC524;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
     .vector{
+        width: 80vw;
+        height: 35vh;
 
     }
+    .vector h2{
+        color: #FFF;
+    }
+    .vector strong{
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px
+
+    }
+/*    Google Play  and Apple Store*/
+    .download{
+        width: 25vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5vw 0;
+    }
+    .social_links{
+        margin-top: 1vh;
+    }
+    .social_links a:nth-child(n){
+        margin-right: 1vh;
+    }
+
+/*    Footer*/
+footer{
+    width: 100vw;
+    height: 55vh;
+    background: #1D2023;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .footer_container{
+        width: 85vw;
+        height: 40vh;
+        padding-top: 3vh;
+        display: flex;
+        justify-content: space-between;
+    }
+        .col_sm{
+            box-sizing: border-box;
+            width: 20vw;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        .col_sm p{
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px; /* 125% */
+        }
+        .col_sm a{
+            width: 90%;
+            color: #99A2AA;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+   .white_line{
+       width: 85vw;
+       height: 2vh;
+       border-bottom: 1px solid white;
+   }
+
+
+
 
 
 
