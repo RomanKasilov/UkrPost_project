@@ -299,7 +299,7 @@ h2{
 /*.services_block" id="finance_block*/
 #finance_block{
     justify-content: center;
-    padding: 0;
+    padding-left: 10vw;
 }
 .finance_block{
     height: 100%;
@@ -346,19 +346,46 @@ h2{
     font-size: 16px;
     line-height: 24px; /* 150% */
 }
-.finance_service h4{
+.finance_service{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap_finance_box{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    padding-left: 1vw;
+
+}
+.wrap_finance_box a{
+    width: 18%;
+    height: 100%;
+    border-radius: 15px;
+    text-decoration: none;
     color: #0E2F4B;
+    transition: 1.5s;
+    border: 1px solid;
+    margin-right: 2vw;
+    padding-left: 1vw;
+}
+.wrap_finance_box a:hover{
+    color: white;
+    background-color: rgba(4, 44, 75, 0.75);
+    transition: 2.5s;
+}
+.wrap_finance_box h4{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px;
+    margin-bottom: 0;
 }
-.wrap_finance_box{
-    display: flex;
-    padding-left: 1vw;
-}
-.f_box{
-    width: 18.75vw;
+.wrap_finance_box a .det{
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+
 }
 /*page Знайти індекс*/
 /* .zip_code_block*/
@@ -556,16 +583,18 @@ h2{
     }
     .ent_box{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 83.5vw;
         height: 25%;
     }
     .ent_box a{
-        width: 30%;
+        width: 25%;
         height: 9vh;
         display: flex;
         align-items: center;
+        padding-left: 2vw;
+        gap:  1vw;
 
         text-decoration: none;
         color: #99A2AA;
@@ -573,7 +602,16 @@ h2{
         font-style: normal;
         font-weight: 700;
         line-height: 32px; /* 160% */
+        border-radius: 10px;
+        transition: 1s;
     }
+.ent_box a:hover{
+    color: #34373a;
+    background-color:  rgba(64, 193, 229, 0.8);
+    font-size: 24px;
+    transition: 2s;
+}
+
 /*Онлайн сервіси Укрпочти*/
 .branches_block{
     width: 100vw;
@@ -591,6 +629,7 @@ h2{
     }
     .vector h2{
         color: #FFF;
+        margin-top: 0;
     }
     .vector strong{
         font-size: 17px;
